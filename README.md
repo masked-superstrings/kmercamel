@@ -1,6 +1,6 @@
 # KmerCamel🐫
 [![BioConda Install](https://img.shields.io/conda/dn/bioconda/kmercamel.svg?style=flag&label=BioConda%20Install)](https://anaconda.org/bioconda/kmercamel)
-[![KmerCamel test](https://github.com/OndrejSladky/kmercamel/actions/workflows/ci.yml/badge.svg)](https://github.com/OndrejSladky/kmercamel/actions/)
+[![KmerCamel test](https://github.com/masked-superstrings/kmercamel/actions/workflows/ci.yml/badge.svg)](https://github.com/masked-superstrings/kmercamel/actions/)
 
 <!-- vim-markdown-toc GFM -->
 
@@ -30,7 +30,7 @@ It is based on the following paper:
 > Ondřej Sladký, Pavel Veselý, and Karel Břinda: Masked superstrings as a unified framework for textual *k*-mer set representations. *bioRxiv* 2023.02.01.526717, 2023.
 [https://doi.org/10.1101/2023.02.01.526717](https://doi.org/10.1101/2023.02.01.526717)
 
-See [supplementary materials](https://github.com/karel-brinda/masked-superstrings-supplement) of the aforementioned paper for experimental results with KmerCamel🐫.
+See [supplementary materials](https://github.com/masked-superstrings/ms-supplement) of the aforementioned paper for experimental results with KmerCamel🐫.
 
 The computation of masked superstring using KmerCamel🐫 is done in two steps -
 first a superstring is computed with its default mask and then its mask can be optimized.
@@ -57,7 +57,7 @@ In both regimes, KmerCamel🐫 outputs a fasta file with a single record - a mas
 Download and compile KmerCamel🐫 by running the following commands:
 
 ```
-git clone --recursive https://github.com/OndrejSladky/kmercamel
+git clone --recursive https://github.com/masked-superstrings/kmercamel
 cd kmercamel && make
 ```
 
@@ -81,7 +81,7 @@ If the masked superstrings are to be computed from simplitigs/unitigs, change th
 
 ### k-mer set indexing
 
-Example with [FMSI](https://github.com/OndrejSladky/fmsi/activity?ref=main):
+Example with [FMSI](https://github.com/masked-superstrings/fmsi):
 ```
 kmercamel compute -k 31 -o /dev/null -M mas-opt.msfa yourfile.fa   # Compute MS and the max-one mask
 fmsi index -p ms-opt.msfa                                          # Create a k-mer index
@@ -168,17 +168,17 @@ To run all the test, simply run `make test`.
 
 ## Issues
 
-Please use [Github issues](https://github.com/OndrejSladky/kmercamel/issues).
+Please use [Github issues](https://github.com/masked-superstrings/kmercamel/issues).
 
 
 ## Changelog
 
-See [Releases](https://github.com/OndrejSladky/kmercamel/releases).
+See [Releases](https://github.com/masked-superstrings/kmercamel/releases).
 
 
 ## Licence
 
-[MIT](https://github.com/OndrejSladky/kmercamel/blob/master/LICENSE.txt)
+[MIT](https://github.com/masked-superstrings/kmercamel/blob/master/LICENSE.txt)
 
 
 ## Contact
